@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #graph {
+            width: 200px;
+            height: 100px;
+            display: flex;
+        }
+        .barholder {
+            background-color: lightcyan;
+            width: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .bar {
+            background-color: blue;
+            width: 10px;
+        }
+        .barnumber {
+            width: 10px;
+            height: 10px;
+            font-size: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    Number of Untapped Lands <input type="number" id="untapped" value="24">
+    <br/>
+    Number of Tapped Lands <input type="number" id="tapped" value="12">
+    <br />
+    Number of Nonlands <input type="number" id="nonland" value="63">
+    <br />
+    <button id="submit">Calculate</button>
+    <br />
+    <br />
+    <div id="graph"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
